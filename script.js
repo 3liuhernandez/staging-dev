@@ -229,8 +229,7 @@ function printMapaData(dowpdown_item) {
     document.getElementById(item_dropdown).classList.add('active');
   }
 
-  setTimeout(()=>{
-    let url = encodeURIComponent(window.location.href);
+  let url = encodeURIComponent(window.location.href);
     let url2 = encodeURIComponent(window.location.hostname);
 
     let title = '';
@@ -246,6 +245,7 @@ function printMapaData(dowpdown_item) {
       document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
     }
 
+  setTimeout(()=>{
     /* ICONOS GRISES */
     document.getElementById('grey_btn0').href = "whatsapp://send?text=" + title + " " + url2;
     document.getElementById('grey_btn1').href = "https://www.instagram.com/fopea/";
