@@ -240,7 +240,7 @@ function printMapaData(dowpdown_item) {
 
     let title = '';
     if(index_map === 0) {
-      title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales !!!");
+      title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales");
       document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
       document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
 
@@ -264,7 +264,7 @@ function printMapaData(dowpdown_item) {
     document.getElementById('btn2').href = "https://twitter.com/intent/tweet?text="+title+"&url=" + url + "&hashtags=#fopea";
     document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
     document.getElementById('btn4').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
-  }, 500);
+  }, 1000);
 
   /* console.log(`dowpdown_item`, dowpdown_item) */
 
