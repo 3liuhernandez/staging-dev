@@ -1011,10 +1011,15 @@ div#map g polygon:hover {
         flex-direction: column;
     }
 
+    #content-info-general #content-info-body #content-info-text .content-both-mobile > div > p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     #content-info-general #content-info-body #content-info-text .content-both-mobile .data-float-right {
         display: block !important;
         width: 50%;
-        margin: 1rem auto;
+        margin: 3rem auto;
     }
 
     #content-info-general #content-info-body #content-info-dato {

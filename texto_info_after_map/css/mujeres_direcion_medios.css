@@ -87,6 +87,13 @@ hr.double-top {
     #content-info-general #content-info-body #content-info-text ul li:last-child {
         padding-bottom: 0;
     }
+    .br-hide-mobile {
+        display: none;
+    }
+
+/*     #content-info-general #content-info-body #content-info-text .content-both-mobile .data-float-right {
+        margin: 3rem auto;
+    } */
 }
 
 @media (max-width: 600px) {
