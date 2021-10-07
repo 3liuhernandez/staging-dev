@@ -230,35 +230,49 @@ function printMapaData(dowpdown_item) {
     document.getElementById(item_dropdown).classList.add('active');
   }
 
-  setTimeout(()=>{
     let url = encodeURIComponent(window.location.href);
     let url2 = encodeURIComponent(window.location.hostname);
 
-    let meta_title = document.querySelectorAll('meta[property="og:title"]')[0]
-    let meta_desc = document.querySelectorAll('meta[property="og:description"]')[0]
+    let meta_title_ = document.querySelector('title')
+    let meta_title = document.querySelector('#meta_title_primary')
+    let meta_title_og = document.querySelector('#meta_title_og')
+
+    let meta_desc = document.querySelectorAll('#meta_description_primary')
+    let meta_desc_og = document.querySelectorAll('#meta_description_og')
 
     let title = '';
+    let title_text = '';
     let descrip = 'La investigación "Situación del periodismo local en la Argentina" presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.';
 
     if(index_map === 0) {
-      title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales");
+      title_text = "Fopea | La precariedad acorrala a los periodistas profesionales";
+      title = encodeURIComponent(title_text);
+
+      meta_title_ = title_text;
+      meta_title.content = title_text;
+      meta_title_og = title_text;
+
       document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
-      meta_title.content = "Fopea | La precariedad acorrala a los periodistas profesionales";
       document.getElementById('desc-principal').textContent = descrip;
 
     } else if(index_map === 1) {
+      title_text = "Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales";
 
       title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
 
-      meta_title.content = "Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales";
+      meta_title_ = title_text;
+      meta_title.content = title_text;
+      meta_title_og = title_text;
+
       document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
       document.getElementById('desc-principal').textContent = descrip;
 
     }
-
-    console.log(`index_map`, index_map)
-
+    /* SET META DESCRIPTION */
     meta_desc = descrip;
+    meta_desc_og = descrip;
+
+  setTimeout(()=>{
 
     /* ICONOS GRISES */
     document.getElementById('grey_btn0').href = "whatsapp://send?text=" + title + " " + url2;
