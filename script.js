@@ -206,9 +206,6 @@ function printMapaData(dowpdown_item) {
       index_map = 1;
     }
 
-    /* console.log(`index_map`, index_map) */
-
-
     /* DESCRIPTION SECTION */
     desc_selected_item = dowpdown_item.target.dataset.description;
 
@@ -235,8 +232,6 @@ function printMapaData(dowpdown_item) {
   setTimeout(()=>{
     let url = encodeURIComponent(window.location.href);
     let url2 = encodeURIComponent(window.location.hostname);
-
-    /* url = "https://staging-xyclon.com/fopea/"; */
 
     let title = '';
     if(index_map === 0) {
