@@ -1,0 +1,72 @@
+.display-0 {font-size: 5.5rem !important;}
+.display-7 { font-size: 1.4rem !important; }
+.display-8 { font-size: 1.25rem !important; }
+.display-9 { font-size: 1.099rem !important; }
+
+.display-small { font-size: .7rem !important; }
+
+.lh-0 { line-height: 0; }
+.w-90 { width: 90%; }
+.w-91 { width: 91%; }
+.w-93 { width: 93%; }
+.w-80 { width: 80%; }
+.w-70 { width: 70%; }
+.w-60 { width: 60%; }
+.w-55 { width: 55%; }
+.w-40 { width: 40%; }
+.w-35 { width: 35%; }
+.w-30 { width: 30%; }
+.w-10 { width: 10%; }
+.w-7  { width: 7%;  }
+
+.top-5 {
+    top: 5%
+}
+@media screen and (max-width: 1550px) {
+    .display-0 {font-size: 5.5rem !important;}
+}
+@media screen and (max-width: 1480px) {
+    .display-0 {font-size: 5rem !important;}
+}
+@media screen and (max-width: 1410px) {
+    .display-0 {font-size: 5rem !important;}
+}
+@media screen and (max-width: 1370px) {
+    .display-0 {font-size: 4.5rem !important;}
+}
+@media screen and (max-width: 1240px) {
+    .display-0 {font-size: 4rem !important;}
+}
+@media screen and (max-width: 1180px) {
+    .display-0 { font-size: 4.0rem !important; }
+}
+@media screen and (max-width: 1160px) {
+    .display-0 {font-size: 3.7rem !important;}
+}
+@media screen and (max-width: 1090px) {
+    .display-0 {font-size: 3.4rem !important;}
+}
+@media screen and (max-width: 960px) {
+    .display-0 {font-size: 3rem !important;}
+}
+@media screen and (max-width: 870px) {
+    .display-0 {font-size: 2.6rem !important;}
+}
+@media screen and (max-width: 790px) {
+    .display-0 {font-size: 2.4rem !important;}
+}
+@media screen and (max-width: 790px) {
+    .display-0 {font-size: 2.4rem !important;}
+}
+@media screen and (max-width: 720px) {
+    .display-0 {font-size: 2.25rem !important;}
+}
+@media screen and (max-width: 600px) {
+    .display-0 {font-size: 2.15rem !important;}
+}
+@media screen and (max-width: 480px) {
+    .display-0 {font-size: 2.5rem !important;}
+}
+@media screen and (max-width: 380px) {
+    .display-0 {font-size: 2rem !important;}
+}

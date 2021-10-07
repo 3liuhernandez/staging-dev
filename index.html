@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta property='og:title' content='Mujeres en dirección de medios | Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%).'/>
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <title>FOPEA</title>
+
+    <!-- BITTER FONT -->
+    <link href='fonts/bitter/Bitter.css' rel='stylesheet' type='text/css'>
+
+    <!-- ROBOTO FONT -->
+    <link href='fonts/roboto/Roboto.css' rel='stylesheet' type='text/css'>
+
+    <!-- Myriad Pro -->
+    <link href='fonts/myriad-pro/myriad-pro.css' rel='stylesheet' type='text/css'>
+
+    <!-- BOOTSTRAP CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JS -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- SVG JS -->
+    <script src="https://unpkg.com/@svgdotjs/svg.js@3.0.16/dist/svg.min.js"></script>
+    <script src="https://unpkg.com/@svgdotjs/svg.panzoom.js@2.1.1/dist/svg.panzoom.min.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!-- POPPER JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+
+    <!-- CHARTS JS -->
+    <script src="js/chart.js"></script>
+
+    <!-- FONT AWESOME CSS -->
+    <!-- <link rel="stylesheet" href="css/fontawesome-all.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- FONT AWESOME JSs -->
+    <script src="js/fontawesome.js"></script>
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/bs5.css?nc=4" />
+    <link rel="stylesheet" href="css/styles.css?nc=5" />
+    <link rel="stylesheet" href="css/metodologia.css?nc=4" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="content_general">
+            <div class="row px-0" id="header_icons">
+                <div>
+                    <a href="https://www.fopea.org/" title="fopea.org"><img src="img/logo_fopea.png" id="logo_fopea" alt="logo fopea" /></a>
+                </div>
+                <div class="d-flex py-4 px-0" id="icons_rrss">
+                    <a id="grey_btn0" class="text-decoration-none" role="button" title="Whatsapp" target="_blank">
+                        <img src="img/icon-grey-ws.svg" alt="icon whatsapp" />
+                    </a>
+                    <a id="grey_btn2" class="text-decoration-none" role="button" title="compartir en Twitter" target="_blank">
+                        <img src="img/icon-grey-tw.svg" alt="icon twitter" />
+                    </a>
+                    <a id="grey_btn1" class="text-decoration-none" role="button" title="compartir en Instagram" target="_blank">
+                        <img src="img/icon-grey-ig.svg" alt="icon instagram" />
+                    </a>
+                    <a id="grey_btn3" class="text-decoration-none" role="button" title="compartir en Facebook" target="_blank">
+                        <img src="img/icon-grey-fb.svg" alt="icon facebook" />
+                    </a>
+                    <a id="grey_btn4" class="text-decoration-none" role="button" title="compartir en Linkedin" target="_blank">
+                        <img src="img/icon-grey-in.svg" alt="icon linkelin" />
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center mx-auto justify-content-center" id="bannerTitle">
+                <h1 class="display-0 w-90 fw-normal ff-bitter">
+                    <span class="d-block" id="titulo-principal"></span>
+                </h1>
+                <p class="text-center display-7 fw-light mt-3 ff-bitter" id="desc-principal"></p>
+            </div>
+
+            <div class="row my-5" id="combo_select">
+                <div class="d-flex">
+
+                    <!-- TIPO DE VINCULO LABORAL -->
+                    <div class="dropdown item-dropdown item-red">
+                        <button class="btn dropdown-toggle" type="button" id="tipo_vinculo_laboral" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>TIPO DE VÍNCULO</span><span>LABORAL</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="tipo_vinculo_laboral">
+                            <li><a
+                                class="dropdown-item active"
+                                href="#relacion_independencia"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="relacion_independencia"
+                                data-title="Relación de dependencia"
+                                data-description="Un tercio (823 o 33,4%) de los 2.464 medios encuestados respondió que tiene periodistas en relación de dependencia. Esta cantidad supera ligeramente al volumen de instituciones que contestaron que sus periodistas son monotributistas."
+                                >Relación de dependencia</a>
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#contrato_limitado"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="contrato_limitado"
+                                data-title="Contrato por tiempo limitado"
+                                data-description="El 9,3% (228) de los 2.464 medios encuestados respondió que sus periodistas tienen contratos por tiempo limitado. Esta modalidad de vinculación es proporcionalmente más frecuente en el norte del país, con Jujuy a la cabeza."
+                                >Contrato limitado</a>
+                            </li>
+                            <li><a 
+                                class="dropdown-item"
+                                href="#pasantia"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="pasantia"
+                                data-title="Pasantía"
+                                data-description="El 3,8% (93) de los 2.464 medios encuestados respondió que contrata pasantes. En las provincias de Chaco, San Luis, Santa Cruz y Tierra del Fuego no se registraron instituciones donde los periodistas trabajen con el régimen de la pasantía."
+                                >Pasantía</a>
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#monotributo"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="monotributo"
+                                data-title="Monotributo"
+                                data-description="El 28% (691) de los 2.464 medios encuestados respondió que tiene periodistas monotributistas. Esta modalidad de vinculación alcanza al 80% de las instituciones en Formosa, y a la mitad en la Ciudad Autónoma de Buenos Aires y en Corrientes."
+                                >Monotributo</a>
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#cuentapropismo"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="cuentapropismo"
+                                data-title="Cuentapropismo"
+                                data-description="El 17,9% (440) de los 2.464 medios encuestados respondió que tiene periodistas cuentapropistas. Esa modalidad de trabajo alcanza a la mitad de las instituciones en la Ciudad Autónoma de Buenos Aires y a más de un tercio de las de Jujuy."
+                                >Cuentapropismo</a>
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#empleo_no_registrado"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="empleo_no_registrado"
+                                data-title="Empleo no registrado"
+                                data-description="El 4,1% (100) de los 2.464 medios encuestados respondió que tiene periodistas no registrados. Esta cantidad supera ligeramente al volumen de instituciones que contestaron que utilizan la modalidad de la pasantía."
+                                >Empleo no registrado</a>
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#comisión_de_publicidad"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="comisión_de_publicidad"
+                                data-title="Comisión o venta de publicidad o espacios"
+                                data-description="El 16,4% (405) de los 2.464 medios encuestados respondió que tiene periodistas que trabajan por comisiones o venta de publicidad o espacios. En la provincia de Salta, esa modalidad alcanza al 60,8% de las organizaciones periodísticas."
+                                >Comisión por publicidades</a>
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#otras_formas_de_relacion"
+                                data-color="item-red"
+                                data-item_dropdown ="tipo_vinculo_laboral"
+                                data-target="otras_formas_de_relacion"
+                                data-title="Otras formas de relación"
+                                data-description="El 31,7% (782) de los 2.464 medios encuestados respondió de manera inespecífica la pregunta sobre cómo se vincula con los periodistas. Este volumen es ligeramente inferior a la cantidad de instituciones que reconocen la relación de dependencia."
+                                >Otras formas de relación</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- MUJERES EN LA DIRECCION DE MEDIOS -->
+                    <div class="dropdown item-dropdown item-green">
+                        <a
+                        id="mujeres_direcion_medios"
+                        href="#mujeres_direccion_medios"
+                        class="btn dropdown-item active"
+                        role="button"
+                        data-item_dropdown ="mujeres_direcion_medios"
+                        data-target="medios_liderados"
+                        data-color="item-green"
+                        data-title="Mujeres en la dirección de los medios"
+                        data-description="Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%)."
+                        >MUJERES EN LA <br/>DIRECCIÓN DE MEDIOS
+                        </a>
+                    </div>
+
+                    <!-- AGNEDA DE TEMAS LOCALES -->
+                    <div class="dropdown item-dropdown item-blue">
+                        <!--<button class="btn dropdown-toggle disabled" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>AGENDA DE</span><span>TEMAS LOCALES</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Trasporte público</a></li>
+                            <li><a class="dropdown-item" href="#">Recolección de residuos</a></li>
+                            <li><a class="dropdown-item" href="#">Agua, luz, cloacas y gas</a></li>
+                            <li><a class="dropdown-item" href="#">Calles y caminos</a></li>
+                            <li><a class="dropdown-item" href="#">Atención sanitaria</a></li>
+                            <li><a class="dropdown-item" href="#">Acitividad escolar</a></li>
+                            <li><a class="dropdown-item" href="#">Prevención de delitos</a></li>
+                            <li><a class="dropdown-item" href="#">Concejo Deliverante</a></li>
+                            <li><a class="dropdown-item" href="#">Intendencia</a></li>
+                            <li><a class="dropdown-item" href="#">Calendario de pagos</a></li>
+                            <li><a class="dropdown-item" href="#">Emprendedores</a></li>
+                            <li><a class="dropdown-item" href="#">Espacios públicos</a></li>
+                            <li><a class="dropdown-item" href="#">Activismo cívico</a></li>
+                            <li><a class="dropdown-item" href="#">Desarrollo urbano</a></li>
+                            <li><a class="dropdown-item" href="#">Precios</a></li>
+                            <li><a class="dropdown-item" href="#">Empleo y mercado laboral</a></li>
+                            <li><a class="dropdown-item" href="#">Infancia y adolescencia</a></li>
+                            <li><a class="dropdown-item" href="#">Violencia de género</a></li>
+                            <li><a class="dropdown-item" href="#">Corrupción</a></li>
+                            <li><a class="dropdown-item" href="#">Energías renovables</a></li>
+                        </ul>-->
+                    </div>
+
+                    <!-- DIVERSIDAD DE MEDIOS -->
+                    <div class="dropdown item-dropdown item-orange">
+                        <!--<button class="btn dropdown-toggle disabled" type="button" id="diversidad_de_medios" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <span>DIVERSIDAD</span><span>DE MEDIOS</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a
+                                href="#diario_de_papel"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="diario_de_papel"
+                                data-color="item-orange"
+                                data-title="Diario de papel"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Diario de papel</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#semanario"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="semanario"
+                                data-color="item-orange"
+                                data-title="Semanario"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Semanario</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#quincenario"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="quincenario"
+                                data-color="item-orange"
+                                data-title="Quincenario"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Quincenario</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#mensual_mayor"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="mensual_mayor"
+                                data-color="item-orange"
+                                data-title="Mensual o mayor"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Mensual o mayor</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#revista"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="revista"
+                                data-color="item-orange"
+                                data-title="Revista"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Revista</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#agencia_noticias"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="agencia_noticias"
+                                data-color="item-orange"
+                                data-title="Agencia de noticias"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Agencia de noticias</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#estacion_radio"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="estacion_radio"
+                                data-color="item-orange"
+                                data-title="Estación de radio"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Estación de radio</a>
+                            </li>
+                            <li>
+                                <a
+                                href="#canal_tv"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="canal_tv"
+                                data-color="item-orange"
+                                data-title="Canal de TV"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Canal de TV</a>
+                            </li>
+
+                            <li class="dropend">
+                                <a
+                                class="dropdown-item dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuClickableInside"
+                                data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside"
+                                aria-expanded="false">Medios digitales</a>
+
+                                <ul class="dropdown-menu dropdown-menu-end" id="ul_submenu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+                                        <a
+                                        href="#portal_de_noticias"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="portal_de_noticias"
+                                        data-color="item-orange"
+                                        data-title="Portal de noticias"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Portal de noticias</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                        href="#blog"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="blog"
+                                        data-color="item-orange"
+                                        data-title="Blog"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Blog</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                        href="#newsletter"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="newsletter"
+                                        data-color="item-orange"
+                                        data-title="Newsletter"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Newsletter</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                        href="#instagram"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="instagram"
+                                        data-color="item-orange"
+                                        data-title="Perfil en Instagram"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Perfil en Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                        href="#facebook"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="facebook"
+                                        data-color="item-orange"
+                                        data-title="Perfil en Facebook"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Perfil en Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                        href="#twitter"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="twitter"
+                                        data-color="item-orange"
+                                        data-title="Perfil en Twitter"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Perfil en Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                        href="#youtube"
+                                        class="dropdown-item"
+                                        data-item_dropdown ="diversidad_de_medios"
+                                        data-target="youtube"
+                                        data-color="item-orange"
+                                        data-title="Perfil en YouTube"
+                                        data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                        >Perfil en YouTube</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a
+                                href="#otra"
+                                class="dropdown-item"
+                                data-item_dropdown ="diversidad_de_medios"
+                                data-target="otra"
+                                data-color="item-orange"
+                                data-title=" Otra"
+                                data-description="En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca"
+                                >Otra</a>
+                            </li>
+                        </ul>-->
+                    </div>
+
+                    <!-- ANTIGUEDAD DE LOS MEDIOS -->
+                    <div class="dropdown item-dropdown item-purple">
+                        <!--<button class="btn dropdown-toggle disabled" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                            ANTIGÜEDAD<br/>DE LOS MEDIOS
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">1 año</a></li>
+                            <li><a class="dropdown-item" href="#">2 años</a></li>
+                            <li><a class="dropdown-item" href="#">3 años</a></li>
+                            <li><a class="dropdown-item" href="#">4 años</a></li>
+                            <li><a class="dropdown-item" href="#">5 años</a></li>
+                            <li><a class="dropdown-item" href="#">Entre 6 y 10 años</a></li>
+                            <li><a class="dropdown-item" href="#">Entre 11 y 20 años</a></li>
+                            <li><a class="dropdown-item" href="#">Entre 21 y 50 años</a></li>
+                            <li><a class="dropdown-item" href="#">Entre 51 y 80 años</a></li>
+                            <li><a class="dropdown-item" href="#">Entre 81 y 100 años</a></li>
+                            <li><a class="dropdown-item" href="#">Más de un siglo</a></li>
+                        </ul>-->
+                    </div>
+
+                    <!-- FUENTE DE INGRESOS -->
+                    <div class="dropdown item-dropdown item-lblue">
+                        <!--<button class="btn dropdown-toggle disabled" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                            fuentes de <br/> ingresos
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Pauta privada</a></li>
+                            <li><a class="dropdown-item" href="#">Pauta oficial</a></li>
+                            <li><a class="dropdown-item" href="#">Donaciones</a></li>
+                            <li><a class="dropdown-item" href="#">Avisos digitales</a></li>
+                            <li><a class="dropdown-item" href="#">Subsidios o aportes</a></li>
+                            <li><a class="dropdown-item" href="#">Suscripciones o abonos</a></li>
+                            <li><a class="dropdown-item" href="#">Venta de espacios</a></li>
+                            <li><a class="dropdown-item" href="#">Eventos</a></li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mx-auto mb-5 px-0" id="content-title-item-selected">
+<!--                <h2 class="ff-bitter-light display-4">Relación de dependencia</h2>-->
+                <h2 class="ff-bitter-light display-4">Mujeres en la dirección de los medios</h2>
+                <p class="w-91 mx-auto text-center display-9 mt-4 ff-roboto-light">
+<!--                    En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca-->
+
+                    Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%).
+                </p>
+            </div>
+
+            <div class="row mb-5" id="content-body">
+                <div class="d-flex" id="container_mapa">
+                    <div id="popper"></div>
+
+                    <div id="map" style="display: flex; width: 100%;"></div>
+
+                    <div class="d-flex flex-column" id="promedio_pais">
+                        <h3 class="mb-0"><span class="d-block ff-roboto-medium">Promedio <br />del país</span></h3>
+                        <strong class="ff-roboto-black display-6 color-item-selected" id="num_prom_pais">33,4%</strong>
+
+                        <canvas id="myChart" style=""></canvas>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <table class="w-100" id="table_order">
+                        <thead>
+                            <tr>
+                                <th style="line-height: 24px; font-size: 16px; display: flex">&nbsp;</th>
+                                <th class="d-flex w-100">
+                                    <span class="w-25 item-mark">
+                                        <span class="hito-mark-number">0%</span>
+                                        <span class="hito-mark-bar"></span>
+                                    </span>
+                                    <span class="w-25 item-mark">
+                                        <span class="hito-mark-bar"></span>
+                                    </span>
+                                    <span class="w-25 item-mark lh-0">
+                                        <span class="hito-mark-number">50</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </span>
+                                    <span class="w-25 item-mark">
+                                        <span class="hito-mark-bar"></span>
+                                    </span>
+                                    <span class="w-25 item-mark">
+                                        <span class="hito-mark-number">100</span>
+                                        <span class="hito-mark-bar"></span>
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="data-map-grid" style="display: block!important;">
+                            <tr class="row-sortable" data-row="MI">
+                                <td>Misiones</td>
+                                <td class="position-relative">
+                                   <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="TF">
+                                <td>Tierra del Fuego</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="CT">
+                                <td>Chubut</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="SF">
+                                <td>Santa Fe</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="NQN">
+                                <td>Neuquén</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="LR">
+                                <td>La Rioja</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="JY">
+                                <td>Jujuy</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="FO">
+                                <td>Formosa</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="SA">
+                                <td>Salta</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="CB">
+                                <td>Córdoba</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="RN">
+                                <td>Río Negro</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="SC">
+                                <td>Santa Cruz</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="TU">
+                                <td>Tucumán</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="BA">
+                                <td>Buenos Aires</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="SE">
+                                <td>S. del Estero</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="SL">
+                                <td>San Luis</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+
+                            <tr class="row-sortable" data-row="CA">
+                                <td>Catamarca</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="CR">
+                                <td>Corrientes</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="SJ">
+                                <td>San Juan</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="MZ">
+                                <td>Mendoza</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="ER">
+                                <td>Entre Ríos</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="LP">
+                                <td>La Pampa</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="CH">
+                                <td>Chaco</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="GBA">
+                                <td>GBA</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                            <tr class="row-sortable" data-row="CABA">
+                                <td>CABA</td>
+                                <td class="position-relative">
+                                    <span style="" class="ff-roboto-regular position-absolute bg-red bar-fill" data-bs-toggle="tooltip" data-bs-placement="right" title=""></span>
+                                    <span class="w-25 item-mark item-mark-first"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"><span class="hito-mark-bar"></span></span>
+                                    <span class="w-25 item-mark"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-0" id="content-info-general">
+            <!-- AQUI SE CARGARÄN LOS ARCHIVOS SEGUN SEA LA SECCION SELECCIONADA -->
+        </div>
+    </div>
+
+    <div class="row mt-5" id="foot_icons">
+        <ul>
+            <li>
+                <a href="#metodologia" onclick="openNav()">
+                    <img src="img/icon_pencil.png" alt="icon pencil">
+                    <span>METODOLOGÍA Y CRÉDITOS</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.fopea.org/etica-y-calidad/codigo-de-etica-de-fopea/" target="_blank">
+                    <img src="img/icon_check.png" alt="icon check" class="mb-1">
+                    <span>CÓDIGO DE ÉTICA</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://desiertosinformativos.fopea.org/" target="_blank">
+                    <img src="img/icon_sheet.png" alt="icon sheet">
+                    <span>DESIERTOS INFORMATIVOS</span>
+                </a>
+            </li>
+            <li>
+                <a href="donwloads/situacion_periodismo_local.xlsx" download="situacion_periodismo_local.xlsx">
+                    <img src="img/icon_download.png" alt="icon download">
+                    <span>DATOS DESCARGABLES</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.fopea.org/" target="_blank">
+                    <img src="img/icon_F.png" alt="icon F from FOPEA">
+                    <span>FOPEA.ORG</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- sidenav METODOLOGIA -->
+    <div id="mySidenav-metodologia">
+        <div class="container" id="container-metodologia">
+            <img src="img/icon-close.png" alt="icon close" id="close-metodologia" onclick="closeNav()"/>
+
+            <div class="col-md-8 mx-auto col-xs-12 col-sm-10" id="col-container-metodologia">
+                <div class="row" id="row-header-metodologia">
+                    <h2 style="font-size: 3em; font-family: Bitter;">Metodología</h2>
+                    <p>
+                        Presentamos una descripción detallada de los criterios y alcances de la
+                        investigación, así como una explicación del procedimiento aplicado para
+                        explorar la situación del periodismo local en la Argentina.
+                    </p>
+                </div>
+    
+                <div class="accordion" id="accordionExample">
+                    <!-- ¿Cuáles son las unidades territoriales cubiertas por la investigación? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc1-content" aria-expanded="false" aria-controls="acc1-content">
+                                ¿Cuáles son las unidades territoriales cubiertas por la investigación?
+                            </button>
+                        </h2>
+                        <div id="acc1-content" class="accordion-collapse collapse" aria-labelledby="acc1" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                La investigación se desplegó por departamentos, municipios y barrios –únicamente para la Ciudad Autónoma de Buenos Aires (CABA)–, aunque las unidades de referencia generales sean el departamento y la provincia.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- ¿Cuál fue la prioridad de la investigación? ¿Por qué? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2-content" aria-expanded="false" aria-controls="acc2-content">
+                                ¿Cuál fue la prioridad de la investigación? ¿Por qué?
+                            </button>
+                        </h2>
+                        <div id="acc2-content" class="accordion-collapse collapse" aria-labelledby="acc2" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                El proyecto buscó en primer término determinar los desiertos informativos, que son los ámbitos donde no hay medios de comunicación o donde los que existen exhiben una dependencia extrema del poder –en sus diferentes manifestaciones–, o gran precariedad, y, por lo tanto, no hay condiciones para el ejercicio del periodismo local o este es sumamente débil. Este objetivo confiere datos y bases científicas a la percepción de los peligros que amenazan a los medios y a los periodistas, en especial a los situados fuera de los núcleos más desarrollados del país, y del acceso desigual a noticias claves para tomar decisiones informadas que enfrentan los ciudadanos. Esta pesquisa incorpora a la Argentina entre los países del mundo que han identificado las llamadas “zonas de silencio” a los fines de implementar medidas para promover el periodismo e impedir mayores deterioros. La visualización de los desiertos de noticias locales fue presentada el 7 de junio de 2021 durante la celebración del Día del Periodista y está disponible en este <a href="https://desiertosinformativos.fopea.org/" target="_blank"> enlace</a>.<br/>
+                                La misma herramienta (ver pregunta específica) usada para recopilar la información atinente a los desiertos de noticias permitió generar un segundo análisis denominado “Situación del Periodismo Local en la Argentina”. Esta nueva entrega incluye seis niveles adicionales de datos sobre las condiciones de contratación de los periodistas; la presencia de mujeres en la dirección de los medios; las plataformas de publicación empleadas; el menú de las noticias locales; y la antigüedad y las fuentes de ingresos de los medios locales.
+            
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- ¿Cuáles son las organizaciones informativas comprendidas por el estudio? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3-content" aria-expanded="false" aria-controls="acc3-content">
+                                ¿Cuáles son las organizaciones informativas comprendidas por el estudio?
+                            </button>
+                        </h2>
+                        <div id="acc3-content" class="accordion-collapse collapse" aria-labelledby="acc3" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                A los fines de esta investigación se considera “medio de comunicación” a aquel que cumple los siguientes requisitos: 1) difunde al menos dos veces al mes información de interés público local (gobierno, salud, educación, seguridad, temas urbanos, ambiente, economía, cultura, etcétera) valiosa para tomar decisiones que mejoren la calidad de vida de los habitantes del departamento, municipio o barrio donde el proyecto tiene su sede, y 2) emplea y remunera a al menos un periodista que se percibe como tal aunque no disponga de un certificado académico que lo valide.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- ¿En qué período tuvo lugar la recolección de datos y cuál es el ciclo histórico de referencia para las encuestas? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc4-content" aria-expanded="false" aria-controls="acc4-content">
+                                ¿En qué período tuvo lugar la recolección de datos y cuál es el ciclo histórico de referencia para las encuestas?
+                            </button>
+                        </h2>
+                        <div id="acc4-content" class="accordion-collapse collapse" aria-labelledby="acc4" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                El trabajo de campo comenzó en la provincia de Tucumán, con una actividad que se extendió entre diciembre de 2020 y finales de enero de 2021. La investigación en las 23 jurisdicciones restantes se desarrolló en los meses de febrero y marzo de 2021, con la excepción de Formosa, Catamarca, CABA, La Pampa, La Rioja y Misiones, que comenzaron en febrero y concluyeron a comienzos de mayo de 2021.
+                                Las encuestas toman como referencia el año 2020. El proceso empezó y terminó durante la pandemia del coronavirus covid-19.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- ¿La investigación puede ser considerada un censo de medios y de periodistas? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc5-content" aria-expanded="false" aria-controls="acc5-content">
+                                ¿La investigación puede ser considerada un censo de medios y de periodistas?
+                            </button>
+                        </h2>
+                        <div id="acc5-content" class="accordion-collapse collapse" aria-labelledby="acc5" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No. La investigación logró detectar 2.464 medios con los requisitos apuntados y 13.597 periodistas. Si bien se trata de un universo inmenso, no es el universo total por estas tres razones: 1) no comprende a todos los medios y periodistas concentrados en los espacios denominados bosques informativos (mayor concentración y diversidad de periodismo local) porque la prioridad era explorar los desiertos -en los ámbitos donde existen mejores condiciones para el periodismo se consideró suficiente encuestar a entre 6 y 12 medios representativos-; 2) si bien hubo un protocolo para sortear la falta de cooperación o la resistencia a completar la encuesta por parte de los directivos de medios, en algunos casos este escollo resultó invencible, y 3) no era el objetivo del proyecto, ni este podía ser cumplido en el tiempo y con los recursos disponibles.
+                                Por último, cabe precisar que la mayoría de los llamados medios con “alcance nacional” –normalmente con sede central en la CABA– no fueron encuestados porque se priorizó la producción y difusión de noticias locales.
+            
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- ¿Cuál fue la herramienta utilizada para recopilar los datos? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc6-content" aria-expanded="false" aria-controls="acc6-content">
+                                ¿Cuál fue la herramienta utilizada para recopilar los datos?
+                            </button>
+                        </h2>
+                        <div id="acc6-content" class="accordion-collapse collapse" aria-labelledby="acc6" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Un formulario digital compuesto de 26 preguntas (<a href="https://docs.google.com/forms/d/e/1FAIpQLSdE__JF34AT9lyg-2Z-v9IoRC6oeNjVLENaIIM5HXfI0PZsUw/viewform" target="_blank"> ver ejemplo</a>). El cuestionario fue armado en función de un análisis previo de las investigaciones de desiertos informativos desarrolladas en países donde está más avanzado el estudio y la identificación del fenómeno, como <a href="https://www.atlas.jor.br/" target="_blank"> Brasil</a>, <a href="https://ipysvenezuela.org/desierto-de-noticias/acerca-de/" target="_blank"> Venezuela</a>, <a href="https://forms.gle/hxXFANPpghHrU3tS7" target="_blank"> Colombia</a>, <a href="https://zonas-de-silencio.eluniversal.com.mx/metodologia.html" target="_blank"> México</a>, <a href="https://localnewsresearchproject.ca/" target="_blank"> Canadá</a> y <a href="https://www.usnewsdeserts.com/" target="_blank"> Estados Unidos</a>. La coordinación del proyecto argentino tuvo reuniones virtuales con responsables de esos trabajos, que compartieron su experiencia, y brindaron recomendaciones tendientes a incrementar la solvencia científica y la calidad de la búsqueda de los datos.
+                                El formulario fue gestionado por un equipo de 27 investigadores de todo el país. En algunas provincias, por la densidad mayor de medios periodísticos, trabajó más de un investigador. Estas jurisdicciones fueron Buenos Aires (tres investigadores), Córdoba (dos investigadores) y Santa Fe (tres investigadores). En provincias donde resultó muy ardua la tarea de recolección de información (Formosa y Catamarca), se organizaron grupos de investigadores de apoyo para reforzar el trabajo.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- ¿Quiénes llenaron los formularios digitales y qué sucedió si no enviaban la respuesta? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc7-content" aria-expanded="false" aria-controls="acc7-content">
+                                ¿Quiénes llenaron los formularios digitales y qué sucedió si no enviaban la respuesta?
+                            </button>
+                        </h2>
+                        <div id="acc7-content" class="accordion-collapse collapse" aria-labelledby="acc7" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Prioritariamente, llenaron formularios los responsables (propietarios, editores generales, directores o voces autorizadas) de los medios de comunicación. En el caso de silencio, dilación o rechazo a responder, el formulario fue completado por quienes llevaron adelante la investigación con el auxilio de fuentes conocedoras del medio. Esta opción quedó habilitada a partir de las 72 horas del primer contacto con la institución. La modalidad utilizada quedó explicitada en la penúltima pregunta (número 25) del formulario.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- ¿Qué se les pidió a los medios encuestados? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc8-content" aria-expanded="false" aria-controls="acc8-content">
+                                ¿Qué se les pidió a los medios encuestados?
+                            </button>
+                        </h2>
+                        <div id="acc8-content" class="accordion-collapse collapse" aria-labelledby="acc8" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Que proporcionaran datos veraces y fidedignos, pese a que la respuesta no tiene el carácter de una declaración jurada.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- ¿Cuál es la fuente de los datos de población? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc9-content" aria-expanded="false" aria-controls="acc9-content">
+                                ¿Cuál es la fuente de los datos de población?
+                            </button>
+                        </h2>
+                        <div id="acc9-content" class="accordion-collapse collapse" aria-labelledby="acc9" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                En todos los casos se tomó como referencia el Censo 2010 disponible en el Instituto Nacional de Estadística y Censos (Indec) de la República Argentina.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- ¿Puede ser que existan medios no detectados? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc10-content" aria-expanded="false" aria-controls="acc10-content">
+                                ¿Puede ser que existan medios no detectados?
+                            </button>
+                        </h2>
+                        <div id="acc10-content" class="accordion-collapse collapse" aria-labelledby="acc10" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sí, puede ser. Nuestros investigadores son conocedores de sus jurisdicciones por lo que se ha intentado cubrir todo el territorio con el mayor detalle, pero es posible que no hayamos llegado a sondear algún medio. También los investigadores han trabajado con los departamentos de prensa provinciales y municipales para chequear el ecosistema informativo.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- ¿Qué se puede hacer si se encuentra un error de información o una mala interpretación? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc11">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc11-content" aria-expanded="false" aria-controls="acc11-content">
+                                ¿Qué se puede hacer si se encuentra un error de información o una mala interpretación?
+                            </button>
+                        </h2>
+                        <div id="acc11-content" class="accordion-collapse collapse" aria-labelledby="acc11" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Si se identifica un error, una mala interpretación o si se quiere hacer un comentario, hay que escribir un correo electrónico a esta dirección. La inquietud será tenida en cuenta para cuando se realice la próxima edición de este estudio.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <!--  ¿Quién financió esta investigación? -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc12">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc12-content" aria-expanded="false" aria-controls="acc12-content">
+                                ¿Quién financió esta investigación?
+                            </button>
+                        </h2>
+                        <div id="acc12-content" class="accordion-collapse collapse" aria-labelledby="acc12" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Esta investigación fue apoyada por <a href="https://newsinitiative.withgoogle.com/intl/es/" target="_blank"> Google News Initiative </a>.
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="container" id="container-elenco">
+            <div class="col-md-8 mx-auto" id="col-elenco">
+                <div class="row" id="header-elenco">
+                    <img src="img/logo_fopea.png" alt="logo fopea" class="mb-2" />
+                    <p>
+                        FOPEA (FORO DE PERIODISMO ARGENTINO) ESTUVO A CARGO DEL DISEÑO Y REALIZACIÓN DE ESTE ESTUDIO
+                    </p>
+                </div>
+                <div class="row" id="content-elenco">
+    
+                    <div>
+                        <span class="heading-elenco">COORDINADORA NACIONAL</span>
+                        <p>Irene Benito</p>
+                    </div>
+    
+                    <div>
+                        <span class="heading-elenco">INVESTIGADORES</span>
+                        <p>
+                            Noelí Cristti<span>,</span>
+                            Roberto Escardó <span>y</span>
+                            Mauro Decker Díaz <span>(Buenos Aires);</span>
+    
+                            Alexandra López <span>(CABA);</span>
+    
+                            Cristti <span>y</span>
+                            Alicia Miller <span>(Catamarca);</span>
+    
+                            Giovanni Catalano <span>(Chaco); </span>
+    
+                            Adrián Sandler <span>(Chubut); </span>
+    
+                            Martín Urricelqui <span>y</span>
+                            Juan Pablo Carranza <span>(Córdoba); </span>
+    
+                            Iván Chávez <span>(Corrientes); </span>
+    
+                            Natalia Buiatti <span>(Entre Ríos); </span>
+    
+                            Luis Cáceres <span>(Jujuy); </span>
+    
+                            José María González <span>(La Pampa); </span>
+    
+                            Heny Fárach <span>(La Rioja); </span>
+    
+                            Valentina Ortego <span>(Mendoza); </span>
+    
+                            Fernanda Berón <span>(Misiones); </span>
+    
+                            Judith Calmels <span>(Neuquén); </span>
+    
+                            Miller <span>(Río Negro); </span>
+    
+                            Emiliano Vernier <span>(Salta); </span>
+    
+                            Agostina Montaño <span>(San Juan); </span>
+    
+                            Pablo Oro <span>(San Luis); </span>
+    
+                            Alfredo Fernández <span>(Santa Cruz); </span>
+    
+                            Juan Chummiento<span>,</span>
+                            Lis Mariani <span>y</span>
+                            Thamina Habichayn <span>(Santa Fe); </span>
+    
+                            Fátima Morales <span>(Santiago del Estero); </span>
+    
+                            Gabriela Bersier <span>(Tierra del Fuego) </span>
+    
+                            <span>y</span> Alba Barbeito <span>(Tucumán). </span>
+                        </p>
+                    </div>
+    
+                    <div>
+                        <span class="heading-elenco">GESTIÓN ADMINISTRATIVA</span>
+                        <p>
+                            Majo Grillo<span>,</span> Beatriz Pazos<span>,</span> Tristán Rodríguez Loredo <span>y</span> Juan Pablo Martínez
+                        </p>
+                    </div>
+    
+                    <div>
+                        <span class="heading-elenco">FOPEA | COMISIÓN DIRECTIVA</span>
+                        <p>
+                            Fernando Ruiz <span>(presidente)</span> y Julio Perotti <span>(prosecretario)</span>.
+                        </p>
+                    </div>
+    
+                    <div>
+                        <span class="heading-elenco">GOOGLE | REPRESENTACIÓN</span>
+                        <p>Juan Manuel Lucero</p>
+                    </div>
+    
+                    <div>
+                        <span class="heading-elenco">VISUALIZACIÓN DE DATOS, DISEÑO, NARRATIVA Y PROGRAMACIÓN</span>
+                        <p>
+                            Alejandro Tumas<span>,</span>
+                            María Heinberg<span>,</span>
+                            Fernando González Castro <span>(Xyclon).</span>
+                        </p>
+                    </div>
+    
+                    <div>
+                        <p class="heading-elenco">ESTA INVESTIGACIÓN FUE APOYADA POR</p>
+                        <img style="margin-top:7px;" src="img/google_iniciative.svg" alt="logo google Initiative" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1"></script>
+
+    <!-- DROPDOWN MENU -->
+    <script>
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl)
+        })
+    </script>
+
+    <!-- TOOLTIP DE LA TABLA -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    </script>
+
+    <!-- SCRIPTS ON LOAD / PRINT MAP  -->
+    <script>
+        window.onload = function() {
+
+            // document.getElementById('ul_submenu').classList.remove('dropdown-menu-start','dropdown-menu-end');
+            // document.getElementById('ul_submenu').classList.add('dropdown-menu-end');
+
+            let width = getCurrentWidth();
+            if(width <= 600) {
+                // document.getElementById('ul_submenu').classList.remove('dropdown-menu-start','dropdown-menu-end');
+                // document.getElementById('ul_submenu').classList.add('dropdown-menu-start');
+            }
+
+            //Selecting DOM element */
+            const buttons = document.querySelectorAll("[data-item_dropdown]");
+            let referrer = false;
+
+            for (let button of buttons) {
+                button.addEventListener("click", printMapaData, true);
+
+                if(
+                    button.href.indexOf(decodeURIComponent(window.location.hash)) > 1
+                ||  button.href.indexOf(window.location.hash) > 1
+                ){
+                    let click_event = new CustomEvent('click');
+                    referrer = true;
+                    button.dispatchEvent(click_event);
+                }
+            }
+
+            if(!referrer){
+                printMapaData();
+            }
+
+
+        }
+    </script>
+
+    <!-- SCRIPT OPEN SIDENAV -->
+    <script>
+        function openNav() {
+            closeNav();
+            disableScroll();
+            document.getElementById('mySidenav-metodologia').setAttribute('style','top: 0');
+        }
+
+        function closeNav() {
+            enableScroll();
+            document.getElementById('mySidenav-metodologia').setAttribute('style','top: 100%; width: 100%;');
+        }
+
+        function disableScroll(){
+            var x = window.scrollX;
+            var y = window.scrollY;
+            window.onscroll = function(){ window.scrollTo(x, y) };
+        }
+
+        function enableScroll(){
+            window.onscroll = null;
+        }
+    </script>
+</body>
+</html>

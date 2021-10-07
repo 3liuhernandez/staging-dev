@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  background: #fff;
+}
+
+small {
+  color: #ccc;
+}
+
+path {
+  cursor: pointer;
+}
+
+/*path:hover {
+  fill: rebeccapurple;
+}*/
+
+#popper {
+  visibility: hidden;
+  padding: 1em;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 3px rbga(0, 0, 0, .3);
+}

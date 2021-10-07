@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Bitter-italic;
+    src: url('Bitter-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Bitter;
+    src: url('Bitter-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Bitter-light;
+    src: url('Bitter-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300;
+}
+
+.ff-bitter {
+    font-family: Bitter, sans-serif;
+}
+.ff-bitter-light {
+    font-family: Bitter-light, sans-serif;
+}
+
+.ff-bitter-italic {
+    font-family: Bitter-italic, sans-serif;
+}
