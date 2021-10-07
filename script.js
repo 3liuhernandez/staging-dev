@@ -197,6 +197,7 @@ function printMapaData(dowpdown_item) {
     /* title_selected_item = dowpdown_item.target.text; */
     /* TITLE SECTION */
     title_selected_item = dowpdown_item.target.dataset.title;
+    /* console.log(`title_selected_item`, title_selected_item) */
 
     var classnames = dowpdown_item.target.parentNode.className;
 
@@ -254,6 +255,8 @@ function printMapaData(dowpdown_item) {
       document.getElementById('desc-principal').textContent = descrip;
 
     }
+
+    console.log(`index_map`, index_map)
 
     meta_desc = descrip;
 
