@@ -184,7 +184,7 @@ function printMapaData(dowpdown_item) {
     // title_selected_item = "Relación de dependencia";
     title_selected_item = "Mujeres en la dirección de los medios";
     // desc_selected_item = "En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca";
-    desc_selected_item = "Las directoras encabezan (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%).";
+    desc_selected_item = "Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%).";
 
   } else {
 
@@ -229,21 +229,31 @@ function printMapaData(dowpdown_item) {
     document.getElementById(item_dropdown).classList.add('active');
   }
 
-  let url = encodeURIComponent(window.location.href);
+    let url = encodeURIComponent(window.location.href);
     let url2 = encodeURIComponent(window.location.hostname);
 
     let title = '';
+    let descrip = 'La investigación "Situación del periodismo local en la Argentina" presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.';
+
     if(index_map === 0) {
       title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales");
       document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
-      document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
+      document.getElementById('desc-principal').textContent = descrip;
 
     } else if(index_map === 1) {
 
       title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
       document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
-      document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
+      document.getElementById('desc-principal').textContent = descrip;
+
     }
+
+    let meta_title = document.querySelectorAll('meta[property="og:title"]')[0]
+    let meta_desc = document.querySelectorAll('meta[property="og:description"]')[0]
+
+    meta_title.content = title;
+    meta_desc = descrip;
+
 
   setTimeout(()=>{
     /* ICONOS GRISES */
@@ -259,6 +269,7 @@ function printMapaData(dowpdown_item) {
     document.getElementById('btn2').href = "https://twitter.com/intent/tweet?text="+title+"&url=" + url + "&hashtags=#fopea";
     document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
     document.getElementById('btn4').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+
   }, 1000);
 
   /* console.log(`dowpdown_item`, dowpdown_item) */
