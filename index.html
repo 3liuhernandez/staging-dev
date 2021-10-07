@@ -2,43 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-
-     <!--[if !mso]><!-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="x-apple-disable-message-reformatting">
-
-    <meta property="og:locale" content="es_AR" />
-    <meta property="og:type" content="website" />
-
     <meta property='og:title' content='Mujeres en dirección de medios | Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%).'/>
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <title>FOPEA</title>
 
     <link rel="icon" type="image/ico" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Primary Meta Tags -->
-    <title>Fopea</title>
-<!--     <meta name="title" content="Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales" />
-    <meta name="description" content="La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país" /> -->
-
-    <!-- Open Graph / Facebook -->
-
-<!--     <meta property="og:title" content="Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales" />
-    <meta property="og:description" content="La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país" />
-    <meta property="og:url" content="https://3liuhernandez.github.io/staging-dev/" />
-    <meta property="og:image" content="https://3liuhernandez.github.io/staging-dev/img/icon_f.png" />
-    <meta property="og:image:secure_url" content="https://3liuhernandez.github.io/staging-dev/img/icon_f.png" /> -->
-
-    <!-- Twitter -->
-<!--     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://3liuhernandez.github.io/staging-dev/" />
-    <meta property="twitter:title" content="Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales" />
-    <meta property="twitter:description" content="La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país" />
-    <meta property="twitter:image" content="https://3liuhernandez.github.io/staging-dev/img/icon_f.png" /> -->
 
     <!-- BITTER FONT -->
     <link href='fonts/bitter/Bitter.css' rel='stylesheet' type='text/css'>
@@ -106,12 +84,10 @@
                 </div>
             </div>
             <div class="row text-center mx-auto justify-content-center" id="bannerTitle">
-                <h1 class="display-0 w-90 fw-normal ff-bitter" id="titulo-principal">
-                    Ellas lideran 14 de cada 100 entidades periodísticas locales
+                <h1 class="display-0 w-90 fw-normal ff-bitter">
+                    <span class="d-block" id="titulo-principal"></span>
                 </h1>
-                <p class="text-center display-7 fw-light mt-3 ff-bitter" id="desc-principal">
-                    La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.
-                </p>
+                <p class="text-center display-7 fw-light mt-3 ff-bitter" id="desc-principal"></p>
             </div>
 
             <div class="row my-5" id="combo_select">
@@ -124,7 +100,7 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="tipo_vinculo_laboral">
                             <li><a
-                                class="dropdown-item"
+                                class="dropdown-item active"
                                 href="#relacion_independencia"
                                 data-color="item-red"
                                 data-item_dropdown ="tipo_vinculo_laboral"
@@ -216,8 +192,8 @@
                         data-item_dropdown ="mujeres_direcion_medios"
                         data-target="medios_liderados"
                         data-color="item-green"
-                        data-title="Mujeres en la dirección de los medios - data-title"
-                        data-description="data-desc - Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%)."
+                        data-title="Mujeres en la dirección de los medios"
+                        data-description="Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%)."
                         >MUJERES EN LA <br/>DIRECCIÓN DE MEDIOS
                         </a>
                     </div>
@@ -492,18 +468,10 @@
             <div class="row text-center mx-auto mb-5 px-0" id="content-title-item-selected">
 <!--                <h2 class="ff-bitter-light display-4">Relación de dependencia</h2>-->
                 <h2 class="ff-bitter-light display-4">Mujeres en la dirección de los medios</h2>
-                <!-- <h2 class="ff-bitter-light display-4"></h2> -->
                 <p class="w-91 mx-auto text-center display-9 mt-4 ff-roboto-light">
 <!--                    En ese sentido, un rasgo distintivo en gran parte de esta región de Córdoba es el impulso que las cooperativas de servicios públicos le han dado a la producción local de noticias: hay ciudades como Río Tercero, en el departamento Tercero Arriba; Tío Pujio, en el departamento General San Martín; Villa Huidobro, en el departamento General Roca-->
 
                     Las directoras encabezan 354 (14,4%) de las 2.464 organizaciones encuestadas. Tierra del Fuego exhibe proporcionalmente el mayor número de lideresas periodísticas (37,5%) mientras que en el otro extremo de la tabla se sitúa Entre Ríos (5,8%).
-                </p>
-
-                <h2 style="display: none;">
-                    Ellas lideran 14 de cada 100 entidades periodísticas locales
-                </h2>
-                <p style="display: none;">
-                    La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.
                 </p>
             </div>
 
