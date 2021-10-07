@@ -229,6 +229,7 @@ function printMapaData(dowpdown_item) {
     document.getElementById(item_dropdown).classList.add('active');
   }
 
+  setTimeout(()=>{
     let url = encodeURIComponent(window.location.href);
     let url2 = encodeURIComponent(window.location.hostname);
 
@@ -254,8 +255,6 @@ function printMapaData(dowpdown_item) {
     meta_title.content = title;
     meta_desc = descrip;
 
-
-  setTimeout(()=>{
     /* ICONOS GRISES */
     document.getElementById('grey_btn0').href = "whatsapp://send?text=" + title + " " + url2;
     document.getElementById('grey_btn1').href = "https://www.instagram.com/fopea/";
