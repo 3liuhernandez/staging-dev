@@ -233,26 +233,28 @@ function printMapaData(dowpdown_item) {
     let url = encodeURIComponent(window.location.href);
     let url2 = encodeURIComponent(window.location.hostname);
 
+    let meta_title = document.querySelectorAll('meta[property="og:title"]')[0]
+    let meta_desc = document.querySelectorAll('meta[property="og:description"]')[0]
+
     let title = '';
     let descrip = 'La investigación "Situación del periodismo local en la Argentina" presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.';
 
     if(index_map === 0) {
       title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales");
       document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
+      meta_title.content = "Fopea | La precariedad acorrala a los periodistas profesionales";
       document.getElementById('desc-principal').textContent = descrip;
 
     } else if(index_map === 1) {
 
       title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
+
+      meta_title.content = "Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales";
       document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
       document.getElementById('desc-principal').textContent = descrip;
 
     }
 
-    let meta_title = document.querySelectorAll('meta[property="og:title"]')[0]
-    let meta_desc = document.querySelectorAll('meta[property="og:description"]')[0]
-
-    meta_title.content = title;
     meta_desc = descrip;
 
     /* ICONOS GRISES */
