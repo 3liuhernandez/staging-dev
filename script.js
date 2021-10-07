@@ -237,8 +237,8 @@ function printMapaData(dowpdown_item) {
     let meta_title = document.querySelector('#meta_title_primary')
     let meta_title_og = document.querySelector('#meta_title_og')
 
-    let meta_desc = document.querySelectorAll('#meta_description_primary')
-    let meta_desc_og = document.querySelectorAll('#meta_description_og')
+    let meta_desc = document.querySelector('#meta_description_primary')
+    let meta_desc_og = document.querySelector('#meta_description_og')
 
     let title = '';
     let title_text = '';
@@ -248,9 +248,9 @@ function printMapaData(dowpdown_item) {
       title_text = "Fopea | La precariedad acorrala a los periodistas profesionales";
       title = encodeURIComponent(title_text);
 
-      meta_title_ = title_text;
+      meta_title_.text = title_text;
       meta_title.content = title_text;
-      meta_title_og = title_text;
+      meta_title_og.content = title_text;
 
       document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
       document.getElementById('desc-principal').textContent = descrip;
@@ -260,17 +260,17 @@ function printMapaData(dowpdown_item) {
 
       title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
 
-      meta_title_ = title_text;
+      meta_title_.text = title_text;
       meta_title.content = title_text;
-      meta_title_og = title_text;
+      meta_title_og.content = title_text;
 
       document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
       document.getElementById('desc-principal').textContent = descrip;
 
     }
     /* SET META DESCRIPTION */
-    meta_desc = descrip;
-    meta_desc_og = descrip;
+    meta_desc.content = descrip;
+    meta_desc_og.content = descrip;
 
   setTimeout(()=>{
 
