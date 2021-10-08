@@ -90,10 +90,6 @@ hr.double-top {
     .br-hide-mobile {
         display: none;
     }
-
-/*     #content-info-general #content-info-body #content-info-text .content-both-mobile .data-float-right {
-        margin: 3rem auto;
-    } */
 }
 
 @media (max-width: 600px) {

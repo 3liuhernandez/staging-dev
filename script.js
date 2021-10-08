@@ -197,7 +197,6 @@ function printMapaData(dowpdown_item) {
     /* title_selected_item = dowpdown_item.target.text; */
     /* TITLE SECTION */
     title_selected_item = dowpdown_item.target.dataset.title;
-    /* console.log(`title_selected_item`, title_selected_item) */
 
     var classnames = dowpdown_item.target.parentNode.className;
 
@@ -230,65 +229,34 @@ function printMapaData(dowpdown_item) {
     document.getElementById(item_dropdown).classList.add('active');
   }
 
-    let url = encodeURIComponent(window.location.href);
-    let url2 = encodeURIComponent(window.location.hostname);
-
-    let meta_title_ = document.querySelector('title')
-    let meta_title = document.querySelector('#meta_title_primary')
-    let meta_title_og = document.querySelector('#meta_title_og')
-
-    let meta_desc = document.querySelector('#meta_description_primary')
-    let meta_desc_og = document.querySelector('#meta_description_og')
-
-    let title = '';
-    let title_text = '';
-    let descrip = 'La investigación "Situación del periodismo local en la Argentina" presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.';
-
-    if(index_map === 0) {
-      title_text = "Fopea | La precariedad acorrala a los periodistas profesionales";
-      title = encodeURIComponent(title_text);
-
-      meta_title_.text = title_text;
-      meta_title.content = title_text;
-      meta_title_og.content = title_text;
-
-      document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
-      document.getElementById('desc-principal').textContent = descrip;
-
-    } else if(index_map === 1) {
-      title_text = "Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales";
-
-      title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
-
-      meta_title_.text = title_text;
-      meta_title.content = title_text;
-      meta_title_og.content = title_text;
-
-      document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
-      document.getElementById('desc-principal').textContent = descrip;
-
-    }
-    /* SET META DESCRIPTION */
-    meta_desc.content = descrip;
-    meta_desc_og.content = descrip;
-
-  setTimeout(()=>{
-
-    /* ICONOS GRISES */
-    document.getElementById('grey_btn0').href = "whatsapp://send?text=" + title + " " + url2;
-    document.getElementById('grey_btn1').href = "https://www.instagram.com/fopea/";
-    document.getElementById('grey_btn2').href = "https://twitter.com/FOPEA";
-    document.getElementById('grey_btn3').href = "https://www.facebook.com/fopea";
-    document.getElementById('grey_btn4').href = "https://www.linkedin.com/company/fopea";
-    /* ICONOS NEGROS */
-    document.getElementById('btn0').href = "whatsapp://send?text=" + title + " " + url;
-    // document.getElementById('btn1').href = "https://www.instagram.com/?url=" + url;
-    document.getElementById('btn1').href = "mailto:?subject="+title+"&body="+title+": " + url;
-    document.getElementById('btn2').href = "https://twitter.com/intent/tweet?text="+title+"&url=" + url + "&hashtags=#fopea";
-    document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-    document.getElementById('btn4').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
-
-  }, 1000);
+    setTimeout(()=>{
+      let url = encodeURIComponent(window.location.href);
+      let url2 = encodeURIComponent(window.location.hostname);
+  
+      let title = '';
+      if(index_map === 0){
+        title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales");
+        document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
+        document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
+      }else if(index_map === 1){
+        title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
+        document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
+        document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
+      }
+      /* ICONOS GRISES */
+      document.getElementById('grey_btn0').href = "whatsapp://send?text=" + title + " " + url2;
+      document.getElementById('grey_btn1').href = "https://www.instagram.com/fopea/";
+      document.getElementById('grey_btn2').href = "https://twitter.com/FOPEA";
+      document.getElementById('grey_btn3').href = "https://www.facebook.com/fopea";
+      document.getElementById('grey_btn4').href = "https://www.linkedin.com/company/fopea";
+      /* ICONOS NEGROS */
+      document.getElementById('btn0').href = "whatsapp://send?text=" + title + " " + url;
+      // document.getElementById('btn1').href = "https://www.instagram.com/?url=" + url;
+      document.getElementById('btn1').href = "mailto:?subject="+title+"&body="+title+": " + url;
+      document.getElementById('btn2').href = "https://twitter.com/intent/tweet?text="+title+"&url=" + url + "&hashtags=#fopea";
+      document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+      document.getElementById('btn4').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+    },1000);
 
   /* console.log(`dowpdown_item`, dowpdown_item) */
 
