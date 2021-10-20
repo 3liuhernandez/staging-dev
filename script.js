@@ -247,7 +247,7 @@ function printMapaData(dowpdown_item) {
       let url = encodeURIComponent(window.location.href);
       let url2 = encodeURIComponent(window.location.hostname);
 
-      //url = "https://3liuhernandez.github.io/staging-dev/";
+    url = "3liuhernandez.github.io/staging-dev/";
   
       let title = '';
 
