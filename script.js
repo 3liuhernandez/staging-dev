@@ -246,6 +246,8 @@ function printMapaData(dowpdown_item) {
     setTimeout(()=>{
       let url = encodeURIComponent(window.location.href);
       let url2 = encodeURIComponent(window.location.hostname);
+
+      //url = "https://3liuhernandez.github.io/staging-dev/";
   
       let title = '';
 
@@ -263,7 +265,7 @@ function printMapaData(dowpdown_item) {
         document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
         document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
 
-      } else if (index_map === 2) {
+      } else {
 
         title = encodeURIComponent("Fopea | Energías renovables, uso de la tierra y corrupción: los temas menos difundidos");
         document.getElementById('titulo-principal').textContent = "Energías renovables, uso de la tierra y corrupción: los temas menos difundidos";
@@ -284,7 +286,7 @@ function printMapaData(dowpdown_item) {
       document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
       document.getElementById('btn4').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
 
-    },1000);
+    }, 500);
 
   /* console.log(`dowpdown_item`, dowpdown_item) */
 
