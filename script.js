@@ -251,6 +251,8 @@ function printMapaData(dowpdown_item) {
 
       /* console.log(`index_map`, index_map) */
 
+      url = "https://3liuhernandez.github.io/staging-dev/"
+
       if(index_map === 0) {
 
         document.getElementById('og_title').content = "Fopea | La precariedad acorrala a los periodistas profesionales";
@@ -288,7 +290,7 @@ function printMapaData(dowpdown_item) {
       document.getElementById('btn1').href = "mailto:?subject="+title+"&body="+title+": " + url;
       document.getElementById('btn2').href = "https://twitter.com/intent/tweet?text="+title+"&url=" + url + "&hashtags=#fopea";
       document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-      document.getElementById('btn4').href = "JS:void(window.open(https://www.linkedin.com/sharing/shareArticle?url='+url'','width=600,height=400,left=50,top=50')); ";
+      document.getElementById('btn4').href = "JS:void(window.open(https://www.linkedin.com/sharing/shareArticle?url="+url+",'width=600,height=400,left=50,top=50')); ";
 
     }, 500);
 
