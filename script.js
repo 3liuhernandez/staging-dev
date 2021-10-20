@@ -288,7 +288,7 @@ function printMapaData(dowpdown_item) {
       document.getElementById('btn1').href = "mailto:?subject="+title+"&body="+title+": " + url;
       document.getElementById('btn2').href = "https://twitter.com/intent/tweet?text="+title+"&url=" + url + "&hashtags=#fopea";
       document.getElementById('btn3').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-      document.getElementById('btn4').href = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+      document.getElementById('btn4').href = "https://www.linkedin.com/sharing/shareArticle?url=" + url;
 
     }, 500);
 
