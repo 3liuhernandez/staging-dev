@@ -1,0 +1,9 @@
+#content-info-general #content-info-body #content-info-text .content-both-mobile .data-float-right {
+    border-top: 4px solid var(--color-item-blue);
+    border-bottom: 4px solid var(--color-item-blue);
+}
+
+#content-info-general #content-info-body #content-info-dato > div {
+    border-top-color: var(--color-item-blue);
+    border-bottom-color: var(--color-item-blue);
+}
