@@ -247,13 +247,13 @@ function printMapaData(dowpdown_item) {
       let url = encodeURIComponent(window.location.href);
       let url2 = encodeURIComponent(window.location.hostname);
 
-    url = "3liuhernandez.github.io/staging-dev/";
-  
       let title = '';
 
-      console.log(`index_map`, index_map)
+      /* console.log(`index_map`, index_map) */
 
       if(index_map === 0) {
+
+        document.getElementById('og_title').content = "Fopea | La precariedad acorrala a los periodistas profesionales";
 
         title = encodeURIComponent("Fopea | La precariedad acorrala a los periodistas profesionales");
         document.getElementById('titulo-principal').textContent = "La precariedad acorrala a los periodistas profesionales";
@@ -261,11 +261,15 @@ function printMapaData(dowpdown_item) {
 
       }else if(index_map === 1) {
 
+        document.getElementById('og_title').content = "Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales";
+
         title = encodeURIComponent("Fopea | Ellas lideran 14 de cada 100 entidades periodísticas locales");
         document.getElementById('titulo-principal').textContent = "Ellas lideran 14 de cada 100 entidades periodísticas locales";
         document.getElementById('desc-principal').textContent = "La investigación “Situación del periodismo local en la Argentina” presenta datos recopilados entre diciembre de 2020 y mayo de 2021. La información aquí disponible confiere una base objetiva para la comprensión y el debate del ejercicio del oficio, y de las libertades de prensa y de expresión en el país.";
 
       } else {
+
+        document.getElementById('og_title').content = "Fopea | Energías renovables, uso de la tierra y corrupción: los temas menos difundidos";
 
         title = encodeURIComponent("Fopea | Energías renovables, uso de la tierra y corrupción: los temas menos difundidos");
         document.getElementById('titulo-principal').textContent = "Energías renovables, uso de la tierra y corrupción: los temas menos difundidos";
